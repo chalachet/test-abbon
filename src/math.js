@@ -9,7 +9,6 @@ function reverseInteger(num) {
     let digit = num % 10;
     num = Math.trunc(num / 10);
 
-    // Check for overflow/underflow
     if (reversed > INT_MAX / 10 || (reversed === INT_MAX / 10 && digit > 7)) {
       return 0;
     }
